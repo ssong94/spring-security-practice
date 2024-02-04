@@ -68,6 +68,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 		Member email = Member.builder()
 				.email(username)
 				.password(encPassword)
+				.role(Role.ADMIN)
 				.build();
 
 		memberRepo.save(email);

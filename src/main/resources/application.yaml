@@ -30,7 +30,8 @@ server:
 logging:
   level:
     org:
-      springframework: info
+      springframework:
+        security: debug
       hibernate:
         type:
           descriptor:
